@@ -22,8 +22,6 @@ Start project: 01.03.2024
 - [Angular CLI =  version 16.2.12]
 - [Node = version 18.19.1]
 - [Package Manager: npm 10.2.4]
-- [Angular = CLI version 16.2.12]
-- [Angular = CLI version 16.2.12]
 - [SCSS]
 - [Angular Material]
 - [TypeScript]
@@ -46,11 +44,4 @@ npm install ngx-mask@8.2.0
 ![console](./doc/login.png)
 
 
-## 
-
-
-
-
-
-
-
+##
