@@ -1,34 +1,43 @@
-import { NgModule } from '@angular/core';
-import {CommonModule, DatePipe} from '@angular/common';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatInputModule} from "@angular/material/input";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import {NgModule, ViewChild} from '@angular/core';
+import { HeaderComponent } from "./header/header.component";
+import { FooterComponent } from "./footer/footer.component";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import {MatSidenav, MatSidenavModule} from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
+import { CommonModule } from "@angular/common";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { RouterModule } from "@angular/router";
+import {MatExpansionModule} from "@angular/material/expansion";
 
-
-const COMPONENTS=[
+const COMPONENTS = [
   HeaderComponent,
   FooterComponent
+];
 
-]
-const PIPES=[
-]
-const MATERIAL_MODULES=[
+const PIPES = [];
+
+const MATERIAL_MODULES = [
   MatToolbarModule,
   MatButtonModule,
   MatIconModule,
   MatFormFieldModule,
   MatInputModule,
-]
-const MODULES=[
+  MatListModule,
+  MatSidenavModule,
+  MatExpansionModule,
+];
+
+const MODULES = [
   CommonModule,
   FormsModule,
   ReactiveFormsModule,
-]
+  RouterModule,
+];
+
 @NgModule({
   declarations: [
     ...COMPONENTS,
@@ -37,6 +46,7 @@ const MODULES=[
     ...MATERIAL_MODULES,
     ...MODULES,
   ],
-  exports:[...MATERIAL_MODULES,...COMPONENTS]
+  exports: [...MATERIAL_MODULES, ...COMPONENTS]
 })
-export class SharedModule { }
+export class SharedModule {
+}

@@ -22,11 +22,25 @@ Start project: 01.03.2024
 - [Angular CLI =  version 16.2.12]
 - [Node = version 18.19.1]
 - [Package Manager: npm 10.2.4]
+- [Angular = CLI version 16.2.12]
+- [Angular = CLI version 16.2.12]
 - [SCSS]
 - [Angular Material]
 - [TypeScript]
 - [NgRx] -> TO DO
 
+## Login ###
+[URL] [http://localhost:4200/login]()
+
+```
+user: user@example.com
+password": 12345
+```
+or
+```
+user: admin@example.com
+password: 12345
+```
 
 #### Download Code | Clone the Repo
 
@@ -38,10 +52,18 @@ git clone {repo_name}
 ```
 npm install
 npm install ngx-mask@8.2.0
+ng add @angular/material
 ```
 
 ## Login
 ![console](./doc/login.png)
 
 
-##
+## Home
+
+![console](./doc/home.png)
+
+
+
+
+
